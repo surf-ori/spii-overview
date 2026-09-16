@@ -84,6 +84,9 @@ inventing content SPII doesn't have.
 | `--accent-strong` | `#153f2e` | `#7fd1a6` |
 | `--accent-soft` | `#dfe9df` | `#1e2c22` |
 | `--border` | `#d9d4c3` | `#2b342a` |
+| `--on-accent` | `#fbfdfb` | `#10140f` |
+
+`--on-accent` is the text color used on top of `--accent` (primary button label). It is near-white in light mode and near-black in dark mode because `--accent` lightens considerably in dark mode to stay visible on the dark background, which would leave white button text under the WCAG AA floor.
 
 Follows `prefers-color-scheme`; no manual toggle (small static page, system preference is
 enough). No pure black/white anywhere.

@@ -1,0 +1,86 @@
+import { readFileSync } from 'node:fs';
+import assert from 'node:assert/strict';
+
+const html = readFileSync(new URL('./index.html', import.meta.url), 'utf8');
+
+// --- WCAG contrast helpers ---
+function srgbToLinear(c) {
+  const s = c / 255;
+  return s <= 0.03928 ? s / 12.92 : ((s + 0.055) / 1.055) ** 2.4;
+}
+function relativeLuminance(hex) {
+  const n = parseInt(hex.replace('#', ''), 16);
+  const r = srgbToLinear((n >> 16) & 255);
+  const g = srgbToLinear((n >> 8) & 255);
+  const b = srgbToLinear(n & 255);
+  return 0.2126 * r + 0.7152 * g + 0.0722 * b;
+}
+function contrastRatio(hexA, hexB) {
+  const l1 = relativeLuminance(hexA);
+  const l2 = relativeLuminance(hexB);
+  const [lighter, darker] = l1 > l2 ? [l1, l2] : [l2, l1];
+  return (lighter + 0.05) / (darker + 0.05);
+}
+
+// --- Task 1: page shell + design tokens ---
+const tokens = {
+  light: {
+    bg: '#f6f4ec', surface: '#ffffff', text: '#161f18', textMuted: '#4d5850',
+    accent: '#1f5c43', accentStrong: '#153f2e', onAccent: '#fbfdfb',
+  },
+  dark: {
+    bg: '#10140f', surface: '#161c15', text: '#eae7db', textMuted: '#9fad9f',
+    accent: '#59b98a', accentStrong: '#7fd1a6', onAccent: '#10140f',
+  },
+};
+
+for (const [theme, t] of Object.entries(tokens)) {
+  for (const hex of Object.values(t)) {
+    assert.ok(html.includes(hex), `${theme} token ${hex} should appear in index.html`);
+  }
+}
+
+assert.ok(
+  contrastRatio(tokens.light.bg, tokens.light.text) >= 4.5,
+  'light body text must meet WCAG AA against the page background'
+);
+assert.ok(
+  contrastRatio(tokens.light.surface, tokens.light.textMuted) >= 4.5,
+  'light muted text must meet WCAG AA against card surfaces'
+);
+assert.ok(
+  contrastRatio(tokens.light.accent, tokens.light.onAccent) >= 4.5,
+  'light primary button text must meet WCAG AA against the accent background'
+);
+assert.ok(
+  contrastRatio(tokens.dark.bg, tokens.dark.text) >= 4.5,
+  'dark body text must meet WCAG AA against the page background'
+);
+assert.ok(
+  contrastRatio(tokens.dark.bg, tokens.dark.textMuted) >= 4.5,
+  'dark muted text must meet WCAG AA against the page background'
+);
+assert.ok(
+  contrastRatio(tokens.dark.accent, tokens.dark.onAccent) >= 4.5,
+  'dark primary button text must meet WCAG AA against the accent background'
+);
+
+assert.match(html, /<title>SPII Overview<\/title>/, 'page must have the SPII Overview title');
+assert.match(html, /<html lang="en">/, 'page must declare English as the document language');
+assert.match(
+  html,
+  /<meta name="viewport" content="width=device-width, initial-scale=1">/,
+  'page must have a responsive viewport meta tag'
+);
+assert.match(
+  html,
+  /@media \(prefers-color-scheme:\s*dark\)/,
+  'page must define a dark theme via prefers-color-scheme'
+);
+assert.match(
+  html,
+  /@media \(prefers-reduced-motion:\s*reduce\)/,
+  'page must respect prefers-reduced-motion'
+);
+
+console.log('Task 1 (shell + tokens): OK');
