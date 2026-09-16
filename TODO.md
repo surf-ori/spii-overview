@@ -11,11 +11,11 @@
 
 ## Build (`index.html` via GitHub Pages)
 
-- [ ] Use the `using-superpowers` skill workflow (and a design/taste skill) to design and build
+- [x] Use the `using-superpowers` skill workflow (and a design/taste skill) to design and build
       `index.html`
-- [ ] Layout: 2 rows × 3 columns, reference model (1a–3a) on top, matching tools (1b–3b) below,
+- [x] Layout: 2 rows × 3 columns, reference model (1a–3a) on top, matching tools (1b–3b) below,
       with the 1↔1, 2↔2, 3↔3 pairing visually clear
-- [ ] Single self-contained static file, no build step
+- [x] Single self-contained static file, no build step
 - [ ] Enable GitHub Pages for this repo (Settings → Pages) once `index.html` exists
 - [ ] Verify the published page renders correctly
 

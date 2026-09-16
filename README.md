@@ -41,7 +41,7 @@ operationalises the reference-model component directly above it.
 - `README.md` — this file
 - `CLAUDE.md` — project/agent context for working on this repo with Claude Code
 - `TODO.md` — task list
-- `index.html` *(planned)* — the published overview page (GitHub Pages)
+- `index.html` — the published overview page (GitHub Pages)
 
 ## License
 
