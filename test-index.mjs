@@ -147,3 +147,13 @@ assert.ok(html.includes('20-07-2026'), 'about section must cite the source docum
 assert.ok(html.includes('EUPL'), 'footer must mention the EUPL license');
 
 console.log('Task 4 (about + footer): OK');
+
+// --- Task 5: final accessibility + copy checks ---
+assert.ok(!html.includes('—'), 'page copy must contain zero em-dashes');
+assert.ok(
+  !/100vh|100dvh/.test(html),
+  'hero must be sized to its content, never forced to 100vh/100dvh (spec: show the page at rest)'
+);
+
+console.log('Task 5 (final accessibility + copy checks): OK');
+console.log('All checks passed.');
