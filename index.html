@@ -231,10 +231,19 @@
     padding-block:26px 50px;
     color:var(--text-muted);
     font-size:13.5px;
+  }
+  .footer-row{
     display:flex;
     justify-content:space-between;
     flex-wrap:wrap;
     gap:10px;
+  }
+  .footer-note{
+    margin:14px 0 0;
+    font-size:12.5px;
+    line-height:1.5;
+    color:var(--text-muted);
+    max-width:70ch;
   }
 </style>
 </head>
@@ -336,8 +345,11 @@
 </main>
 
 <footer class="wrap">
-  <span>SPII, Strategic Plan for Integrated Open Science Infrastructure</span>
-  <span>EUPL license</span>
+  <div class="footer-row">
+    <span>SPII, Strategic Plan for Integrated Open Science Infrastructure</span>
+    <span>EUPL license</span>
+  </div>
+  <p class="footer-note">We intend to move away from platforms owned by large technology companies and migrate to an open source, publicly accessible, community-governed git platform in the near future (for example, a Forgejo instance hosted on SURF infrastructure).</p>
 </footer>
 </body>
 </html>
