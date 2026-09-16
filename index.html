@@ -106,7 +106,7 @@
   }
   .wordmark{font-weight:700; font-size:18px; letter-spacing:-0.01em;}
   .wordmark span{color:var(--accent);}
-  .navlinks{display:flex; gap:28px; font-size:14.5px;}
+  .navlinks{display:flex; gap:24px; font-size:14.5px;}
   .navlinks a{color:var(--text-muted); text-decoration:none; transition:color .15s ease;}
   .navlinks a:hover{color:var(--accent-strong);}
 
@@ -176,7 +176,18 @@
     .deliv-grid > *:nth-child(8){grid-column:3; grid-row:3;}
     .deliv-grid > *:nth-child(9){grid-column:3; grid-row:2;}
   }
-  .card{background:var(--surface); border:1px solid var(--border); border-radius:6px; padding:22px 20px; display:block; color:inherit; text-decoration:none;}
+  .group-legend{display:flex; gap:22px; margin-bottom:20px; font-size:13.5px; color:var(--text-muted);}
+  .legend-item{display:inline-flex; align-items:center; gap:8px;}
+  .legend-item .dot{width:9px; height:9px; border-radius:50%; display:inline-block;}
+  .legend-model .dot{background:var(--accent);}
+  .legend-tool .dot{background:var(--text-muted);}
+  .deliv-cell{display:flex; flex-direction:column;}
+  .card{background:var(--surface); border:1px solid var(--border); border-top-width:3px; border-radius:6px; padding:22px 20px; display:block; color:inherit; text-decoration:none; flex:1;}
+  .card--model{border-top-color:var(--accent);}
+  .card--tool{border-top-color:var(--text-muted);}
+  .card .kicker{display:block; font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:.06em; margin-bottom:10px;}
+  .card--model .kicker{color:var(--accent);}
+  .card--tool .kicker{color:var(--text-muted);}
   .card .code{font-family:"IBM Plex Mono", monospace; font-size:12px; color:var(--accent); letter-spacing:.04em;}
   .card h3{font-size:17.5px; margin:8px 0 8px; letter-spacing:-0.01em;}
   .card p{font-size:14.5px; line-height:1.5; color:var(--text-muted); margin:0;}
@@ -184,6 +195,8 @@
   a.card:hover{border-color:var(--accent);}
   .card-link{display:inline-block; margin-top:12px; font-size:14px; font-weight:600; color:var(--accent); text-decoration:none;}
   a.card:hover .card-link{text-decoration:underline;}
+  .feedback-link{display:inline-block; margin-top:10px; font-size:13px; font-weight:600; color:var(--text-muted); text-decoration:none;}
+  .feedback-link:hover{color:var(--accent-strong); text-decoration:underline;}
   .pair-caption{
     display:flex;
     justify-content:center;
@@ -206,6 +219,12 @@
     margin:0 0 14px;
   }
   .source-note{font-size:13.5px; color:var(--text-muted); margin:0;}
+  .tracker-list{list-style:none; margin:26px 0 0; padding:0; display:grid; grid-template-columns:1fr 1fr; gap:10px 24px; font-size:14.5px;}
+  .tracker-list a{color:var(--text); text-decoration:none; border-bottom:1px solid var(--border);}
+  .tracker-list a:hover{color:var(--accent-strong); border-color:var(--accent-strong);}
+  @media (max-width:768px){
+    .tracker-list{grid-template-columns:1fr;}
+  }
   footer{
     border-top:1px solid var(--border);
     margin-top:60px;
@@ -224,6 +243,7 @@
   <div class="wordmark">SPII<span>.</span></div>
   <div class="navlinks">
     <a href="#deliverables">Deliverables</a>
+    <a href="#way-of-working">Way of working</a>
     <a href="#about">About</a>
   </div>
 </nav>
@@ -265,15 +285,20 @@
     <p>The reference model, top row, and its matching tool, bottom row. Each tool operationalises the piece directly above it.</p>
   </div>
 
+  <div class="group-legend">
+    <span class="legend-item legend-model"><span class="dot"></span> Reference model</span>
+    <span class="legend-item legend-tool"><span class="dot"></span> Tools</span>
+  </div>
+
   <div class="deliv-grid">
-    <div class="card"><span class="code">1A</span><h3>Values and Principles</h3><p>Shared values and principles that define a connected Open Science infrastructure.</p></div>
-    <a class="card" href="https://surf-ori.github.io/open-science-maturity/" target="_blank" rel="noopener"><span class="code">1B</span><h3>Maturity Assessment Tool</h3><p>Check how far an infrastructure component follows the shared principles.</p><span class="card-link">Open the tool &rarr;</span></a>
+    <div class="deliv-cell"><div class="card card--model"><span class="kicker">Reference model</span><span class="code">1A</span><h3>Values and Principles</h3><p>Shared values and principles that define a connected Open Science infrastructure.</p></div><a class="feedback-link" href="https://github.com/surf-ori/spii-1a-values-and-principles/issues/new/choose">Feedback &rarr;</a></div>
+    <div class="deliv-cell"><a class="card card--tool" href="https://surf-ori.github.io/open-science-maturity/" target="_blank" rel="noopener"><span class="kicker">Tool</span><span class="code">1B</span><h3>Maturity Assessment Tool</h3><p>Check how far an infrastructure component follows the shared principles.</p><span class="card-link">Open the tool &rarr;</span></a><a class="feedback-link" href="https://github.com/surf-ori/spii-1b-maturity-assessment-tool/issues/new/choose">Feedback &rarr;</a></div>
     <div class="connector" aria-hidden="true"><svg width="2" height="30"><line x1="1" y1="0" x2="1" y2="30" stroke="var(--border)" stroke-width="1.5" stroke-dasharray="3 3"/></svg></div>
-    <div class="card"><span class="code">2A</span><h3>Landscape &amp; Researcher Journey</h3><p>A map of the ecosystem, seen through the path a researcher actually takes.</p></div>
-    <div class="card"><span class="code">2B</span><h3>Mapping of Infrastructures &amp; Projects</h3><p>Existing components and projects, mapped to find overlaps and gaps.</p></div>
+    <div class="deliv-cell"><div class="card card--model"><span class="kicker">Reference model</span><span class="code">2A</span><h3>Landscape &amp; Researcher Journey</h3><p>A map of the ecosystem, seen through the path a researcher actually takes.</p></div><a class="feedback-link" href="https://github.com/surf-ori/spii-2a-landscape-researcher-journey/issues/new/choose">Feedback &rarr;</a></div>
+    <div class="deliv-cell"><div class="card card--tool"><span class="kicker">Tool</span><span class="code">2B</span><h3>Mapping of Infrastructures &amp; Projects</h3><p>Existing components and projects, mapped to find overlaps and gaps.</p></div><a class="feedback-link" href="https://github.com/surf-ori/spii-2b-infrastructure-mapping/issues/new/choose">Feedback &rarr;</a></div>
     <div class="connector" aria-hidden="true"><svg width="2" height="30"><line x1="1" y1="0" x2="1" y2="30" stroke="var(--border)" stroke-width="1.5" stroke-dasharray="3 3"/></svg></div>
-    <div class="card"><span class="code">3A</span><h3>Capabilities &amp; Interoperability</h3><p>The functions every component needs, and how they connect across domains.</p></div>
-    <div class="card"><span class="code">3B</span><h3>Tool Box of Shared Tools</h3><p>A shared set of reusable tools that put interoperability into practice.</p></div>
+    <div class="deliv-cell"><div class="card card--model"><span class="kicker">Reference model</span><span class="code">3A</span><h3>Capabilities &amp; Interoperability</h3><p>The functions every component needs, and how they connect across domains.</p></div><a class="feedback-link" href="https://github.com/surf-ori/spii-3a-capabilities-interoperability/issues/new/choose">Feedback &rarr;</a></div>
+    <div class="deliv-cell"><div class="card card--tool"><span class="kicker">Tool</span><span class="code">3B</span><h3>Tool Box of Shared Tools</h3><p>A shared set of reusable tools that put interoperability into practice.</p></div><a class="feedback-link" href="https://github.com/surf-ori/spii-3b-toolbox-shared-tools/issues/new/choose">Feedback &rarr;</a></div>
     <div class="connector" aria-hidden="true"><svg width="2" height="30"><line x1="1" y1="0" x2="1" y2="30" stroke="var(--border)" stroke-width="1.5" stroke-dasharray="3 3"/></svg></div>
   </div>
 
@@ -282,6 +307,23 @@
     <span>2A &harr; 2B</span>
     <span>3A &harr; 3B</span>
   </div>
+</section>
+
+<section id="way-of-working" class="wrap">
+  <div class="section-head">
+    <h2>Way of working</h2>
+    <p>Feedback on every deliverable is collected in the open, on GitHub, and every outcome stays visible.</p>
+  </div>
+  <p class="about-body">Each of the six deliverables has its own repository and issue tracker. Anyone, a researcher, an institution, or an infrastructure provider, can open an issue against a deliverable: a correction, a gap, or a proposal. The issue template asks for your name, organisation, role, and which infrastructure you represent, so the origin of the feedback is clear alongside its content.</p>
+  <p class="about-body">A curator reviews incoming issues for each deliverable. The curator checks feedback against that deliverable's scope, decides whether it is incorporated, and records the outcome directly on the issue (accepted, rejected, or already covered) with a short rationale before closing it. Nothing is handled silently: an issue's status and the reasoning behind it stay visible in the tracker, so the deliverables stay a community effort in practice, not only in name. Who curates each deliverable will be published here once assigned.</p>
+  <ul class="tracker-list">
+    <li><a href="https://github.com/surf-ori/spii-1a-values-and-principles/issues" target="_blank" rel="noopener">1A: Values and Principles tracker</a></li>
+    <li><a href="https://github.com/surf-ori/spii-1b-maturity-assessment-tool/issues" target="_blank" rel="noopener">1B: Maturity Assessment Tool tracker</a></li>
+    <li><a href="https://github.com/surf-ori/spii-2a-landscape-researcher-journey/issues" target="_blank" rel="noopener">2A: Landscape &amp; Researcher Journey tracker</a></li>
+    <li><a href="https://github.com/surf-ori/spii-2b-infrastructure-mapping/issues" target="_blank" rel="noopener">2B: Mapping of Infrastructures &amp; Projects tracker</a></li>
+    <li><a href="https://github.com/surf-ori/spii-3a-capabilities-interoperability/issues" target="_blank" rel="noopener">3A: Capabilities &amp; Interoperability tracker</a></li>
+    <li><a href="https://github.com/surf-ori/spii-3b-toolbox-shared-tools/issues" target="_blank" rel="noopener">3B: Tool Box of Shared Tools tracker</a></li>
+  </ul>
 </section>
 
 <section id="about" class="wrap">
