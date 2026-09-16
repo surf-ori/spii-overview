@@ -42,7 +42,11 @@ operationalises the reference-model component directly above it.
 - `CLAUDE.md` — project/agent context for working on this repo with Claude Code
 - `TODO.md` — task list
 - `index.html` — the published overview page (GitHub Pages)
+- `test-index.mjs` — check script for `index.html` (run via `node test-index.mjs`)
+- `docs/superpowers/` — design spec and implementation plan for `index.html`
 
 ## License
 
 EUPL — see [LICENSE](LICENSE).
+
+Fonts (Outfit, Source Serif 4, IBM Plex Mono) are licensed under the SIL Open Font License.

@@ -5,9 +5,11 @@ Agent context for working on the `spii-overview` repository.
 ## What this repo is
 
 A static, single-page overview of the six SPII deliverables, meant to be published as
-`index.html` via GitHub Pages. There is no application code yet — the current content is
-project documentation (`README.md`, this file, `TODO.md`) that establishes the structure the
-page must communicate. See `README.md` for the project background and the deliverables table.
+`index.html` via GitHub Pages. `index.html` is built and lives at the repo root (see
+`docs/superpowers/specs/2026-09-16-index-page-design.md` and
+`docs/superpowers/plans/2026-09-16-spii-index-page.md` for the design rationale and how it was
+built). `test-index.mjs` is its check script — run `node test-index.mjs` after any edit. See
+`README.md` for the project background and the deliverables table.
 
 ## The six deliverables — canonical structure
 
@@ -34,11 +36,11 @@ names or scope change, that source document is the one to re-check against, not 
 English throughout — the page is for an international/EU Open Science audience, not just
 Dutch stakeholders.
 
-## Next steps (not yet done)
+## Status — done, pending GitHub Pages
 
-The plan is to build `index.html` in a follow-up session using the `using-superpowers` skill
-workflow together with a design skill, then publish via GitHub Pages. See `TODO.md` for the
-concrete task breakdown. Until `index.html` exists, don't assume GitHub Pages is configured.
+`index.html` is complete and reviewed. What's outstanding is entirely administrative: an org
+owner or repo admin needs to enable GitHub Pages (repo Settings → Pages → Source: "Deploy from
+a branch" → Branch: `main` → folder `/ (root)`) once this branch is merged. See `TODO.md`.
 
 ## Conventions
 

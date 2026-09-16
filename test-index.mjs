@@ -1,4 +1,4 @@
-import { readFileSync } from 'node:fs';
+import { readFileSync, readdirSync, existsSync } from 'node:fs';
 import assert from 'node:assert/strict';
 
 const html = readFileSync(new URL('./index.html', import.meta.url), 'utf8');
@@ -156,4 +156,13 @@ assert.ok(
 );
 
 console.log('Task 5 (final accessibility + copy checks): OK');
+
+// --- Final-review fix verification ---
+assert.ok(!html.includes('fonts.googleapis.com'), 'fonts must be self-hosted, not loaded from Google Fonts');
+assert.ok(html.includes('<main>') || html.includes('<main '), 'page must have a <main> landmark');
+
+const fontFiles = readdirSync(new URL('./fonts/', import.meta.url)).filter((f) => f.endsWith('.woff2'));
+assert.ok(fontFiles.length >= 3, 'fonts/ must contain the self-hosted woff2 files');
+
+console.log('Final-review fixes: OK');
 console.log('All checks passed.');
