@@ -31,6 +31,14 @@
       for name, organisation, role, and "representing infrastructure"
 - [ ] Assign a curator per deliverable and publish their name in the "Way of working" section
       (currently a generic role description, no names yet)
+- [x] Copy the Open Science maturity tool (from `surf-ori/open-science-maturity`) into
+      `spii-1b-maturity-assessment-tool`, so that repo is both the tool and deliverable 1B's
+      tracker
+- [ ] **Blocking**: enable GitHub Pages for `spii-1b-maturity-assessment-tool` (Settings → Pages
+      → Deploy from branch `main`, folder `/`) — same permission gap as spii-overview's own
+      Pages step above; an org owner needs to do this. Until then,
+      `https://surf-ori.github.io/spii-1b-maturity-assessment-tool/` (linked from the 1B card and
+      from that repo's own README/index.html) won't resolve.
 
 ## Housekeeping
 
