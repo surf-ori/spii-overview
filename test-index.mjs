@@ -84,3 +84,23 @@ assert.match(
 );
 
 console.log('Task 1 (shell + tokens): OK');
+
+// --- Task 2: nav + hero ---
+assert.match(html, /href="#deliverables"/, 'nav or hero must link to #deliverables');
+assert.match(html, /href="#about"/, 'nav or hero must link to #about');
+
+const heroHeadline = 'A coherent Open Science infrastructure for the Netherlands.';
+const heroSubtext = 'Six deliverables, one reference model. A shared framework, and the tools that put it into practice.';
+assert.ok(html.includes(heroHeadline), 'hero headline must match the approved copy');
+assert.ok(html.includes(heroSubtext), 'hero subtext must match the approved copy');
+assert.ok(
+  heroSubtext.split(/\s+/).length <= 20,
+  'hero subtext must stay at or under 20 words per the design spec'
+);
+assert.ok(html.includes('View the deliverables'), 'hero must include the primary CTA');
+assert.ok(html.includes('Read the background'), 'hero must include the secondary CTA');
+
+const hexagonCount = (html.match(/<polygon/g) || []).length;
+assert.equal(hexagonCount, 6, 'hero diagram must draw six hexagons (3 reference-model + 3 tools)');
+
+console.log('Task 2 (nav + hero): OK');

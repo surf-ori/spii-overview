@@ -49,8 +49,102 @@
   @media (prefers-reduced-motion: reduce){
     *{transition:none !important; animation:none !important;}
   }
+  .navbar{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding-block:20px;
+    border-bottom:1px solid var(--border);
+  }
+  .wordmark{font-weight:700; font-size:18px; letter-spacing:-0.01em;}
+  .wordmark span{color:var(--accent);}
+  .navlinks{display:flex; gap:28px; font-size:14.5px;}
+  .navlinks a{color:var(--text-muted); text-decoration:none;}
+  .navlinks a:hover{color:var(--text);}
+
+  .hero{
+    display:grid;
+    grid-template-columns:1.1fr 0.9fr;
+    gap:40px;
+    align-items:center;
+    padding-block:48px 64px;
+  }
+  .hero h1{
+    font-size:clamp(30px, 5vw, 48px);
+    line-height:1.08;
+    letter-spacing:-0.02em;
+    font-weight:600;
+    text-wrap:balance;
+    margin:0 0 20px;
+  }
+  .hero-sub{
+    font-family:"Source Serif 4", Georgia, serif;
+    font-size:18px;
+    line-height:1.55;
+    color:var(--text-muted);
+    max-width:46ch;
+    margin:0 0 28px;
+  }
+  .cta-row{display:flex; gap:14px; flex-wrap:wrap;}
+  .btn{
+    font-family:"Outfit", sans-serif;
+    font-weight:600;
+    font-size:15px;
+    padding:12px 22px;
+    border-radius:3px;
+    text-decoration:none;
+    display:inline-block;
+  }
+  .btn-primary{background:var(--accent); color:var(--on-accent);}
+  .btn-secondary{background:transparent; color:var(--text); border:1px solid var(--border);}
+  .hero-diagram{
+    background:var(--surface-2);
+    border:1px solid var(--border);
+    border-radius:6px;
+    padding:28px;
+  }
+  @media (max-width:760px){
+    .hero{grid-template-columns:1fr;}
+  }
 </style>
 </head>
 <body>
+<nav class="wrap navbar">
+  <div class="wordmark">SPII<span>.</span></div>
+  <div class="navlinks">
+    <a href="#deliverables">Deliverables</a>
+    <a href="#about">About</a>
+  </div>
+</nav>
+
+<section class="wrap hero">
+  <div>
+    <h1>A coherent Open Science infrastructure for the Netherlands.</h1>
+    <p class="hero-sub">Six deliverables, one reference model. A shared framework, and the tools that put it into practice.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="#deliverables">View the deliverables</a>
+      <a class="btn btn-secondary" href="#about">Read the background</a>
+    </div>
+  </div>
+  <div class="hero-diagram" aria-hidden="true">
+    <svg viewBox="0 0 320 260" width="100%" height="auto" role="img" aria-label="Three connected hexagons representing the reference model, linked to three matching tool hexagons below">
+      <g fill="none" stroke="var(--border)" stroke-width="1.5">
+        <line x1="80" y1="70" x2="160" y2="70"/>
+        <line x1="160" y1="70" x2="240" y2="70"/>
+        <line x1="80" y1="70" x2="80" y2="180"/>
+        <line x1="160" y1="70" x2="160" y2="180"/>
+        <line x1="240" y1="70" x2="240" y2="180"/>
+      </g>
+      <g>
+        <polygon points="80,45 97,57 97,83 80,95 63,83 63,57" fill="var(--accent-soft)" stroke="var(--accent)" stroke-width="1.5"/>
+        <polygon points="160,45 177,57 177,83 160,95 143,83 143,57" fill="var(--accent-soft)" stroke="var(--accent)" stroke-width="1.5"/>
+        <polygon points="240,45 257,57 257,83 240,95 223,83 223,57" fill="var(--accent-soft)" stroke="var(--accent)" stroke-width="1.5"/>
+        <polygon points="80,155 97,167 97,193 80,205 63,193 63,167" fill="var(--surface)" stroke="var(--text-muted)" stroke-width="1.5"/>
+        <polygon points="160,155 177,167 177,193 160,205 143,193 143,167" fill="var(--surface)" stroke="var(--text-muted)" stroke-width="1.5"/>
+        <polygon points="240,155 257,167 257,193 240,205 223,193 223,167" fill="var(--surface)" stroke="var(--text-muted)" stroke-width="1.5"/>
+      </g>
+    </svg>
+  </div>
+</section>
 </body>
 </html>
