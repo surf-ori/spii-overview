@@ -36,6 +36,23 @@ operationalises the reference-model component directly above it.
 | **2** | **2a. Landscape & Researcher Journey** — overview of the OSI landscape/ecosystem and how it supports the researcher's journey | **2b. Mapping of Infrastructures and Projects** — mapping of existing infrastructural components and projects along several dimensions (domain, functional role, level, owner), to identify duplications and gaps |
 | **3** | **3a. Capabilities & Interoperability** — the functions, relationships and (cross-/intra-domain syntactic) interoperability the reference model describes | **3b. Tool Box of Shared Tools** — a shared set of reusable tools supporting those capabilities and interoperability |
 
+## Feedback and way of working
+
+Each deliverable has its own repository and issue tracker, so feedback is collected in the open
+and its outcome stays traceable. See the "Way of working" section on the published page, or the
+trackers directly:
+
+- [spii-1a-values-and-principles](https://github.com/surf-ori/spii-1a-values-and-principles/issues)
+- [spii-1b-maturity-assessment-tool](https://github.com/surf-ori/spii-1b-maturity-assessment-tool/issues)
+- [spii-2a-landscape-researcher-journey](https://github.com/surf-ori/spii-2a-landscape-researcher-journey/issues)
+- [spii-2b-infrastructure-mapping](https://github.com/surf-ori/spii-2b-infrastructure-mapping/issues)
+- [spii-3a-capabilities-interoperability](https://github.com/surf-ori/spii-3a-capabilities-interoperability/issues)
+- [spii-3b-toolbox-shared-tools](https://github.com/surf-ori/spii-3b-toolbox-shared-tools/issues)
+
+A curator per deliverable triages incoming issues and records whether they were accepted,
+rejected, or already covered, with a short rationale, before closing them. See `TODO.md` — these
+repositories still need to be created by an org owner.
+
 ## Repository contents
 
 - `README.md` — this file
