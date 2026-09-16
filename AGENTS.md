@@ -1,6 +1,7 @@
-# Agenda
+# Agents
 
-Active priorities for `spii-overview`. Full backlog: see `TODO.md`.
+Instructions and active priorities for agents (and humans) working on `spii-overview`. Also see
+`CLAUDE.md` for full project context. Full backlog: see `TODO.md`.
 
 ## Now
 
