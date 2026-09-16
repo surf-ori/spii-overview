@@ -5,8 +5,10 @@
 **Goal:** Build the single self-contained `index.html` overview page for the SPII project's
 six deliverables, ready to publish via GitHub Pages.
 
-**Architecture:** One static HTML file with an inline `<style>` block (no external CSS/JS
-files, no framework, no build step). Content is built incrementally: page shell and design
+**Architecture:** One static HTML file with an inline `<style>` block (no framework, no build
+step; the one external resource is the Google Fonts stylesheet `<link>` for Outfit/Source
+Serif 4/IBM Plex Mono, which the spec's Typography section left as an open implementation
+choice and Task 1 resolved in favor of). Content is built incrementally: page shell and design
 tokens first, then nav+hero, then the deliverables grid, then about+footer, then a final
 accessibility/copy pass. Each content addition is paired with assertions in a plain
 `node:assert`-based check script (`test-index.mjs`, matching the existing repo convention from
@@ -21,7 +23,9 @@ SVG. Node.js (`node:assert/strict`, `node:fs`) for the check script, no npm depe
 ## Global Constraints
 
 - Single self-contained `index.html` at the repo root — no build step, no JS framework, no
-  external CSS/JS files (per `CLAUDE.md` conventions).
+  external CSS/JS files (per `CLAUDE.md` conventions), **except** the Google Fonts stylesheet
+  `<link>` (Outfit/Source Serif 4/IBM Plex Mono) — confirmed with the user after Task 1's
+  review flagged the conflict between this line and the spec's Typography section.
 - English copy throughout.
 - Zero em-dashes (`—`) anywhere in shipped copy.
 - WCAG AA contrast (>= 4.5:1) for every text/background pairing, in both light and dark theme.
