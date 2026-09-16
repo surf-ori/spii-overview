@@ -50,8 +50,8 @@ trackers directly:
 - [spii-3b-toolbox-shared-tools](https://github.com/surf-ori/spii-3b-toolbox-shared-tools/issues)
 
 A curator per deliverable triages incoming issues and records whether they were accepted,
-rejected, or already covered, with a short rationale, before closing them. See `TODO.md` — these
-repositories still need to be created by an org owner.
+rejected, or already covered, with a short rationale, before closing them. Curators are not yet
+assigned per deliverable — see `TODO.md`.
 
 ## Repository contents
 
