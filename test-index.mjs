@@ -104,3 +104,31 @@ const hexagonCount = (html.match(/<polygon/g) || []).length;
 assert.equal(hexagonCount, 6, 'hero diagram must draw six hexagons (3 reference-model + 3 tools)');
 
 console.log('Task 2 (nav + hero): OK');
+
+// --- Task 3: deliverables grid ---
+assert.match(html, /id="deliverables"/, 'deliverables section must exist with id="deliverables"');
+
+const deliverables = [
+  ['1A', 'Values and Principles', 'Shared values and principles that define a connected Open Science infrastructure.'],
+  ['2A', 'Landscape &amp; Researcher Journey', 'A map of the ecosystem, seen through the path a researcher actually takes.'],
+  ['3A', 'Capabilities &amp; Interoperability', 'The functions every component needs, and how they connect across domains.'],
+  ['1B', 'Maturity Assessment Tool', 'Check how far an infrastructure component follows the shared principles.'],
+  ['2B', 'Mapping of Infrastructures &amp; Projects', 'Existing components and projects, mapped to find overlaps and gaps.'],
+  ['3B', 'Tool Box of Shared Tools', 'A shared set of reusable tools that put interoperability into practice.'],
+];
+
+for (const [code, title, copy] of deliverables) {
+  assert.ok(html.includes(`>${code}<`), `deliverable code ${code} must appear in its own element`);
+  assert.ok(html.includes(title), `deliverable ${code} title "${title}" must appear`);
+  assert.ok(html.includes(copy), `deliverable ${code} copy must appear verbatim`);
+}
+
+for (const code of deliverables.map((d) => d[0])) {
+  const occurrences = html.split(`>${code}<`).length - 1;
+  assert.equal(occurrences, 1, `deliverable code ${code} must appear exactly once`);
+}
+
+assert.match(html, /grid-template-columns:\s*1fr 1fr 1fr/, 'deliverables grid must use a three-column CSS grid');
+assert.match(html, /@media \(max-width:\s*768px\)/, 'deliverables grid must collapse to one column under 768px');
+
+console.log('Task 3 (deliverables grid): OK');

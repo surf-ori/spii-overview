@@ -106,6 +106,28 @@
   @media (max-width:760px){
     .hero{grid-template-columns:1fr;}
   }
+  .section-head{padding-block:8px 30px;}
+  .section-head h2{font-size:clamp(24px, 3.4vw, 32px); letter-spacing:-0.01em; margin:0 0 10px;}
+  .section-head p{font-family:"Source Serif 4", Georgia, serif; color:var(--text-muted); font-size:16.5px; max-width:60ch; margin:0;}
+  .deliv-grid{display:grid; grid-template-columns:1fr 1fr 1fr; gap:18px;}
+  .card{background:var(--surface); border:1px solid var(--border); border-radius:6px; padding:22px 20px;}
+  .card .code{font-family:"IBM Plex Mono", monospace; font-size:12px; color:var(--accent); letter-spacing:.04em;}
+  .card h3{font-size:17.5px; margin:8px 0 8px; letter-spacing:-0.01em;}
+  .card p{font-size:14.5px; line-height:1.5; color:var(--text-muted); margin:0;}
+  .connector-row{display:grid; grid-template-columns:1fr 1fr 1fr; justify-items:center; margin-block:4px;}
+  .pair-caption{
+    display:flex;
+    justify-content:center;
+    gap:28px;
+    margin-top:26px;
+    font-family:"IBM Plex Mono", monospace;
+    font-size:13px;
+    letter-spacing:.02em;
+    color:var(--text-muted);
+  }
+  @media (max-width:768px){
+    .deliv-grid, .connector-row{grid-template-columns:1fr;}
+  }
 </style>
 </head>
 <body>
@@ -144,6 +166,37 @@
         <polygon points="240,155 257,167 257,193 240,205 223,193 223,167" fill="var(--surface)" stroke="var(--text-muted)" stroke-width="1.5"/>
       </g>
     </svg>
+  </div>
+</section>
+
+<section id="deliverables" class="wrap">
+  <div class="section-head">
+    <h2>The six deliverables</h2>
+    <p>The reference model, top row, and its matching tool, bottom row. Each tool operationalises the piece directly above it.</p>
+  </div>
+
+  <div class="deliv-grid">
+    <div class="card"><span class="code">1A</span><h3>Values and Principles</h3><p>Shared values and principles that define a connected Open Science infrastructure.</p></div>
+    <div class="card"><span class="code">2A</span><h3>Landscape &amp; Researcher Journey</h3><p>A map of the ecosystem, seen through the path a researcher actually takes.</p></div>
+    <div class="card"><span class="code">3A</span><h3>Capabilities &amp; Interoperability</h3><p>The functions every component needs, and how they connect across domains.</p></div>
+  </div>
+
+  <div class="connector-row" aria-hidden="true">
+    <svg width="2" height="30"><line x1="1" y1="0" x2="1" y2="30" stroke="var(--border)" stroke-width="1.5" stroke-dasharray="3 3"/></svg>
+    <svg width="2" height="30"><line x1="1" y1="0" x2="1" y2="30" stroke="var(--border)" stroke-width="1.5" stroke-dasharray="3 3"/></svg>
+    <svg width="2" height="30"><line x1="1" y1="0" x2="1" y2="30" stroke="var(--border)" stroke-width="1.5" stroke-dasharray="3 3"/></svg>
+  </div>
+
+  <div class="deliv-grid">
+    <div class="card"><span class="code">1B</span><h3>Maturity Assessment Tool</h3><p>Check how far an infrastructure component follows the shared principles.</p></div>
+    <div class="card"><span class="code">2B</span><h3>Mapping of Infrastructures &amp; Projects</h3><p>Existing components and projects, mapped to find overlaps and gaps.</p></div>
+    <div class="card"><span class="code">3B</span><h3>Tool Box of Shared Tools</h3><p>A shared set of reusable tools that put interoperability into practice.</p></div>
+  </div>
+
+  <div class="pair-caption">
+    <span>1A &harr; 1B</span>
+    <span>2A &harr; 2B</span>
+    <span>3A &harr; 3B</span>
   </div>
 </section>
 </body>
