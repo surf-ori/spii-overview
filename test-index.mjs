@@ -132,3 +132,18 @@ assert.match(html, /grid-template-columns:\s*1fr 1fr 1fr/, 'deliverables grid mu
 assert.match(html, /@media \(max-width:\s*768px\)/, 'deliverables grid must collapse to one column under 768px');
 
 console.log('Task 3 (deliverables grid): OK');
+
+// --- Task 4: about + footer ---
+assert.match(html, /id="about"/, 'about section must exist with id="about"');
+assert.ok(
+  html.includes('Strategic Plan for Integrated Open Science Infrastructure'),
+  'about section must spell out the SPII acronym'
+);
+assert.ok(
+  html.includes('Towards a reference model for an open science infrastructure'),
+  'about section must cite the source document'
+);
+assert.ok(html.includes('20-07-2026'), 'about section must cite the source document version date');
+assert.ok(html.includes('EUPL'), 'footer must mention the EUPL license');
+
+console.log('Task 4 (about + footer): OK');
