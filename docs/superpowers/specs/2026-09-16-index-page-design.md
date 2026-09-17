@@ -34,8 +34,9 @@ previews the page's central idea (reference model paired with tools) before the 
 scrolls.
 
 Hero copy (final, zero em-dashes per taste-skill's typography rules):
-- Headline (≤ 2 lines desktop): "A coherent Open Science infrastructure for the
-  Netherlands."
+- Headline (wraps to 3 balanced lines at desktop with the wider hero column and reduced type
+  scale added for this wording): "A coherent and connected Open Science infrastructure for
+  the Netherlands."
 - Subtext (≤ 20 words): "Six deliverables, one reference model. A shared framework, and
   the tools that put it into practice."
 - CTAs: primary "View the deliverables" (→ `#deliverables`), secondary "Read the
