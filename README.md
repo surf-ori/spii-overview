@@ -32,7 +32,7 @@ operationalises the reference-model component directly above it.
 
 | | Reference Model | Tools |
 |---|---|---|
-| **1** | **1a. Values and Principles** — shared values and operationalised principles underlying the Open Science infrastructure ecosystem | **1b. Maturity Assessment Tool** — self-assessment tool for infrastructure owners/developers to check how far their component follows the principles |
+| **1** | **1a. Values and Principles** — shared values and operationalised principles underlying the Open Science infrastructure ecosystem | **1b. Principles Alignment Tool** — self-assessment tool for infrastructure owners/developers to check how far their component follows the principles |
 | **2** | **2a. Landscape & Researcher Journey** — overview of the OSI landscape/ecosystem and how it supports the researcher's journey | **2b. Mapping of Infrastructures and Projects** — mapping of existing infrastructural components and projects along several dimensions (domain, functional role, level, owner), to identify duplications and gaps |
 | **3** | **3a. Capabilities & Interoperability** — the functions, relationships and (cross-/intra-domain syntactic) interoperability the reference model describes | **3b. Tool Box of Shared Tools** — a shared set of reusable tools supporting those capabilities and interoperability |
 

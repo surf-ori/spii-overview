@@ -54,7 +54,7 @@ Hero copy (final, zero em-dashes per taste-skill's typography rules):
      3a Capabilities & Interoperability
    - A connector between each column (dashed vertical line, or small down-arrow) making the
      1a↔1b / 2a↔2b / 3a↔3b pairing visually explicit, not just labeled
-   - Row 2 (Tools): 1b Maturity Assessment Tool, 2b Mapping of Infrastructures and Projects,
+   - Row 2 (Tools): 1b Principles Alignment Tool, 2b Mapping of Infrastructures and Projects,
      3b Tool Box of Shared Tools
    - Each card: mono code (1A/1B/...), short title, one-sentence description (≤ 25 words,
      content drawn from the reference-model source document, no filler verbs)
@@ -119,7 +119,7 @@ infrastructure", v20-07-2026 — see `README.md`)
 | 1A | Values and Principles | Shared values and principles that define a connected Open Science infrastructure. |
 | 2A | Landscape & Researcher Journey | A map of the ecosystem, seen through the path a researcher actually takes. |
 | 3A | Capabilities & Interoperability | The functions every component needs, and how they connect across domains. |
-| 1B | Maturity Assessment Tool | Check how far an infrastructure component follows the shared principles. |
+| 1B | Principles Alignment Tool | Check how far an infrastructure component follows the shared principles. |
 | 2B | Mapping of Infrastructures & Projects | Existing components and projects, mapped to find overlaps and gaps. |
 | 3B | Tool Box of Shared Tools | A shared set of reusable tools that put interoperability into practice. |
 
