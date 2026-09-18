@@ -112,7 +112,7 @@ const deliverables = [
   ['1A', 'Values and Principles', 'Shared values and principles that define a connected Open Science infrastructure.'],
   ['2A', 'Landscape &amp; Researcher Journey', 'A map of the ecosystem, seen through the path a researcher actually takes.'],
   ['3A', 'Capabilities &amp; Interoperability', 'The functions every component needs, and how they connect across domains.'],
-  ['1B', 'Maturity Assessment Tool', 'Check how far an infrastructure component follows the shared principles.'],
+  ['1B', 'Principles Alignment Tool', 'Check how far an infrastructure component follows the shared principles.'],
   ['2B', 'Mapping of Infrastructures &amp; Projects', 'Existing components and projects, mapped to find overlaps and gaps.'],
   ['3B', 'Tool Box of Shared Tools', 'A shared set of reusable tools that put interoperability into practice.'],
 ];

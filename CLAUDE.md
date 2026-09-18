@@ -18,7 +18,7 @@ item directly above it in row 1.
 
 ```
 Reference Model:  1a Values and Principles   2a Landscape & Researcher Journey   3a Capabilities & Interoperability
-Tools:            1b Maturity Assessment     2b Mapping of Infrastructures       3b Tool Box of Shared Tools
+Tools:            1b Principles Alignment    2b Mapping of Infrastructures       3b Tool Box of Shared Tools
                      Tool (tool for 1a)         and Projects (tool for 2a)          (tool for 3a)
 ```
 
