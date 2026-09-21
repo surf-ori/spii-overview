@@ -34,10 +34,11 @@
 - [x] Copy the Open Science maturity tool (from `surf-ori/open-science-maturity`) into
       `spii-1b-maturity-assessment-tool`, so that repo is both the tool and deliverable 1B's
       tracker
-- [ ] **Blocking**: enable GitHub Pages for `spii-1b-maturity-assessment-tool` (Settings → Pages
-      → Deploy from branch `main`, folder `/`) — same permission gap as spii-overview's own
-      Pages step above; an org owner needs to do this. Until then,
-      `https://surf-ori.github.io/spii-1b-maturity-assessment-tool/` (linked from the 1B card and
+- [ ] **Blocking**: enable GitHub Pages for `spii-1b-principles-alignment-tool` (renamed from
+      `spii-1b-maturity-assessment-tool` on 2026-09-21) (Settings → Pages → Deploy from branch
+      `main`, folder `/`) — same permission gap as spii-overview's own Pages step above; an org
+      owner needs to do this. Until then,
+      `https://surf-ori.github.io/spii-1b-principles-alignment-tool/` (linked from the 1B card and
       from that repo's own README/index.html) won't resolve.
 
 ## Housekeeping

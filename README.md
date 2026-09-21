@@ -43,7 +43,7 @@ and its outcome stays traceable. See the "Way of working" section on the publish
 trackers directly:
 
 - [spii-1a-values-and-principles](https://github.com/surf-ori/spii-1a-values-and-principles/issues)
-- [spii-1b-maturity-assessment-tool](https://github.com/surf-ori/spii-1b-maturity-assessment-tool/issues)
+- [spii-1b-principles-alignment-tool](https://github.com/surf-ori/spii-1b-principles-alignment-tool/issues)
 - [spii-2a-landscape-researcher-journey](https://github.com/surf-ori/spii-2a-landscape-researcher-journey/issues)
 - [spii-2b-infrastructure-mapping](https://github.com/surf-ori/spii-2b-infrastructure-mapping/issues)
 - [spii-3a-capabilities-interoperability](https://github.com/surf-ori/spii-3a-capabilities-interoperability/issues)
