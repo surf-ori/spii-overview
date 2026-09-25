@@ -113,8 +113,8 @@ const deliverables = [
   ['2A', 'Landscape &amp; Researcher Journey', 'A map of the ecosystem, seen through the path a researcher actually takes.'],
   ['3A', 'Capabilities &amp; Interoperability', 'The functions every component needs, and how they connect across domains.'],
   ['1B', 'Principles Alignment Tool', 'Check how far an infrastructure component follows the shared principles.'],
-  ['2B', 'Mapping of Infrastructures &amp; Projects', 'Existing components and projects, mapped to find overlaps and gaps.'],
-  ['3B', 'Tool Box of Shared Tools', 'A shared set of reusable tools that put interoperability into practice.'],
+  ['2B', 'Inventory of infrastructures and projects', 'Existing components and projects, mapped to find overlaps and gaps.'],
+  ['3B', 'Toolbox of shared components', 'A shared set of reusable tools that put interoperability into practice.'],
 ];
 
 for (const [code, title, copy] of deliverables) {

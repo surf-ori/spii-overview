@@ -8,16 +8,10 @@
 - [ ] Add owners/contacts and links for the three tools (1b–3b) once available
 - [ ] Decide what "status" means per deliverable (e.g. not started / in progress / draft v0.5 /
       published) and gather current status for each
-- [ ] Rename two deliverable display names:
+- [x] Rename two deliverable display names (done 2026-09-25):
       - **2B**: "Mapping of Infrastructures & Projects" → "Inventory of infrastructures and
         projects"
       - **3B**: "Tool Box of Shared Tools" → "Toolbox of shared components"
-      Touch points: this repo's `index.html` (card `<h3>`), `README.md` (deliverables table),
-      `CLAUDE.md` (canonical-structure diagram), and `test-index.mjs` (assertions on the old
-      strings); each tracker repo's own `index.html`/`README.md`/`CLAUDE.md`/
-      `.github/ISSUE_TEMPLATE/feedback.yml` (`spii-2b-infrastructure-mapping`,
-      `spii-3b-toolbox-shared-tools` — neither repo needs renaming itself, `toolbox-shared-tools`
-      already reads fine against the new name).
 
 ## Build (`index.html` via GitHub Pages)
 
