@@ -36,14 +36,15 @@ operationalises the reference-model component directly above it.
 | **2** | **2a. Landscape & Researcher Journey** — overview of the OSI landscape/ecosystem and how it supports the researcher's journey | **2b. Inventory of infrastructures and projects** — mapping of existing infrastructural components and projects along several dimensions (domain, functional role, level, owner), to identify duplications and gaps |
 | **3** | **3a. Capabilities & Interoperability** — the functions, relationships and (cross-/intra-domain syntactic) interoperability the reference model describes | **3b. Toolbox of shared components** — a shared set of reusable tools supporting those capabilities and interoperability |
 
-**POSI+ (draft, September 2026).** SPII's principles subgroup proposes presenting the SPII
-principles as an extension of the [Principles of Open Scholarly
-Infrastructure](https://openscholarlyinfrastructure.org/) (POSI): POSI+ v0.5 keeps POSI's twenty
-principles verbatim and adds the seventeen SPII principles POSI does not cover, on a four-level
-maturity scale. POSI+ is a name for the Dutch Open Science context, not a new version of POSI. See
-the [overlap analysis and proposal](https://surf-ori.github.io/spii-1a-values-and-principles/#posi-plus)
-on the 1a page; POSI+ is the first framework in the
-[Principles Alignment Tool](https://surf-ori.github.io/spii-1b-principles-alignment-tool/#posi-plus).
+**POSI and POSI+SPII (October 2026).** On October 1, 2026, SPII's values and principles working
+group decided that the [Principles of Open Scholarly Infrastructure](https://openscholarlyinfrastructure.org/)
+(POSI v2.0) is the official assessment framework in the
+[Principles Alignment Tool](https://surf-ori.github.io/spii-1b-principles-alignment-tool/#posi). The
+draft POSI+SPII merged v0.5 — POSI's twenty principles verbatim plus the seventeen SPII principles
+POSI does not cover, on a four-level maturity scale — will be shown to and discussed with POSI's
+authors and community, for careful review aiming at official adoption by POSI globally. See the
+[overlap analysis and proposal](https://surf-ori.github.io/spii-1a-values-and-principles/#posi-plus)
+on the 1a page.
 
 ## Feedback and way of working
 
