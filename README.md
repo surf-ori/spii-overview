@@ -43,7 +43,7 @@ group decided that the [Principles of Open Scholarly Infrastructure](https://ope
 draft POSI+SPII merged v0.5 — POSI's twenty principles verbatim plus the seventeen SPII principles
 POSI does not cover, on a four-level maturity scale — will be shown to and discussed with POSI's
 authors and community, for careful review aiming at official adoption by POSI globally. See the
-[overlap analysis and proposal](https://surf-ori.github.io/spii-1a-values-and-principles/#posi-plus)
+[overlap analysis and proposal](https://surf-ori.github.io/spii-1a-values-and-principles/#posi-spii)
 on the 1a page.
 
 ## Feedback and way of working
