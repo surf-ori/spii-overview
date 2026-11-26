@@ -50,3 +50,7 @@ a branch" → Branch: `main` → folder `/ (root)`) once this branch is merged. 
   DuckDB-WASM/DuckLake catalog browser (also confusingly named `overview.html`) that has
   nothing to do with this project's deliverables page. Flagged in `TODO.md` for cleanup;
   ignore it otherwise.
+
+## Look and navigation (2026-11-26)
+
+`index.html` loads the [SPII design system](https://surf-ori.github.io/spii-design-system/) (`spii.css`, `spii-nav.js`): the shared top bar with the menu and theme choice, the floating Feedback button (it opens `.github/ISSUE_TEMPLATE/feedback.yml`, field `feedback`) and the favicon. Dark tokens apply under `:root[data-theme="dark"]` and, for "system", under the dark-mode media query. The hero diagram keeps its six polygons, each now a link to its deliverable that shows the deliverable's colour and pictogram on hover or focus (geometry and pictograms from the design system's `tools/build-assets.py`). Each card carries its deliverable's hexagon and colour (`data-deliverable` on `.deliv-cell`).

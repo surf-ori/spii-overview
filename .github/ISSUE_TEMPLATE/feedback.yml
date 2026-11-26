@@ -1,0 +1,22 @@
+name: Feedback
+description: Feedback on the SPII overview page, or on SPII as a whole.
+title: "Feedback: "
+labels: ["feedback"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for your feedback on SPII, the Strategic Plan for Integrated Open Science Infrastructure. For feedback on one deliverable, you can also use that deliverable's own tracker (see the overview page). **Everything you write here is public.**
+  - type: textarea
+    id: feedback
+    attributes:
+      label: Your feedback
+      description: A question, an idea, a correction or something you liked. The page you came from is added below your text.
+    validations:
+      required: true
+  - type: input
+    id: name
+    attributes:
+      label: Name and organisation (optional)
+    validations:
+      required: false
