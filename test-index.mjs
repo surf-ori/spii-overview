@@ -110,10 +110,10 @@ assert.match(html, /id="deliverables"/, 'deliverables section must exist with id
 
 const deliverables = [
   ['1A', 'Values and Principles', 'Shared values and principles that define a connected Open Science infrastructure.'],
-  ['2A', 'Landscape &amp; Researcher Journey', 'A map of the ecosystem, seen through the path a researcher actually takes.'],
+  ['2A', 'Landscape of Open Science infrastructures', 'A map of the ecosystem.'],
   ['3A', 'Practical Interoperability Guidelines', 'A set of recommendations based on existing standards that form a pathway towards interoperability.'],
-  ['1B', 'Principles Alignment Tool', 'Check how far an infrastructure component follows the shared principles.'],
-  ['2B', 'Inventory of infrastructures and projects', 'Existing components and projects, mapped to find overlaps and gaps.'],
+  ['1B', 'Principles Alignment Assessment Tool', 'Check how far an infrastructure component follows the shared principles.'],
+  ['2B', 'Mapping of Infrastructures &amp; Infrastructure development projects', 'Existing components and projects, mapped to find overlaps and gaps.'],
   ['3B', 'Interoperability Assessment Tool', 'Check to what extent an infrastructure component follows the Interoperability Guidelines.'],
 ];
 

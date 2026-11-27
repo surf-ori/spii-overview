@@ -17,9 +17,11 @@ Two rows of three, each column a pair: the tool in row 2 operationalises the ref
 item directly above it in row 1.
 
 ```
-Reference Model:  1a Values and Principles   2a Landscape & Researcher Journey   3a Practical Interoperability Guidelines
-Tools:            1b Principles Alignment    2b Inventory of infrastructures     3b Interoperability Assessment Tool
-                     Tool (tool for 1a)         and projects (tool for 2a)         (tool for 3a)
+Reference Model:  1a Values and Principles      2a Landscape of Open Science      3a Practical Interoperability
+                                                   infrastructures                   Guidelines
+Tools:            1b Principles Alignment        2b Mapping of Infrastructures &   3b Interoperability
+                     Assessment Tool                Infrastructure development        Assessment Tool
+                     (tool for 1a)                  projects (tool for 2a)            (tool for 3a)
 ```
 
 Keep this pairing (1a↔1b, 2a↔2b, 3a↔3b) visible in any layout — it's the whole point of the

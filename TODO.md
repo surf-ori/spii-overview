@@ -15,6 +15,11 @@
 - [x] Rename 3A and 3B (done 2026-11-27):
       - **3A**: "Capabilities & Interoperability" → "Practical Interoperability Guidelines"
       - **3B**: "Toolbox of shared components" → "Interoperability Assessment Tool"
+- [x] Rename 1B, 2A and 2B (done 2026-11-27), and give 3B a checklist pictogram:
+      - **1B**: "Principles Alignment Tool" → "Principles Alignment Assessment Tool"
+      - **2A**: "Landscape & Researcher Journey" → "Landscape of Open Science infrastructures"
+      - **2B**: "Inventory of infrastructures and projects" → "Mapping of Infrastructures & Infrastructure
+        development projects"
 
 ## Build (`index.html` via GitHub Pages)
 
