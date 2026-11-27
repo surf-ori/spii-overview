@@ -32,14 +32,14 @@ operationalises the reference-model component directly above it.
 
 | | Reference Model | Tools |
 |---|---|---|
-| **1** | **1a. Values and Principles** — shared values and operationalised principles underlying the Open Science infrastructure ecosystem | **1b. Principles Alignment Tool** — self-assessment tool for infrastructure owners/developers to check how far their component follows the principles |
-| **2** | **2a. Landscape & Researcher Journey** — overview of the OSI landscape/ecosystem and how it supports the researcher's journey | **2b. Inventory of infrastructures and projects** — mapping of existing infrastructural components and projects along several dimensions (domain, functional role, level, owner), to identify duplications and gaps |
+| **1** | **1a. Values and Principles** — shared values and operationalised principles underlying the Open Science infrastructure ecosystem | **1b. Principles Alignment Assessment Tool** — self-assessment tool for infrastructure owners/developers to check how far their component follows the principles |
+| **2** | **2a. Landscape of Open Science infrastructures** — overview of the OSI landscape/ecosystem and how it supports the researcher's journey | **2b. Mapping of Infrastructures & Infrastructure development projects** — mapping of existing infrastructural components and projects along several dimensions (domain, functional role, level, owner), to identify duplications and gaps |
 | **3** | **3a. Practical Interoperability Guidelines** — a set of recommendations based on existing standards that form a pathway towards interoperability | **3b. Interoperability Assessment Tool** — check to what extent an infrastructure component follows the Interoperability Guidelines |
 
 **POSI and POSI+SPII (October 2026).** On October 1, 2026, SPII's values and principles working
 group decided that the [Principles of Open Scholarly Infrastructure](https://openscholarlyinfrastructure.org/)
 (POSI v2.0) is the official assessment framework in the
-[Principles Alignment Tool](https://surf-ori.github.io/spii-1b-principles-alignment-tool/#posi). The
+[Principles Alignment Assessment Tool](https://surf-ori.github.io/spii-1b-principles-alignment-tool/). The
 draft POSI+SPII merged v0.5 — POSI's twenty principles verbatim plus the seventeen SPII principles
 POSI does not cover, on a four-level maturity scale — will be shown to and discussed with POSI's
 authors and community, for careful review aiming at official adoption by POSI globally. See the
