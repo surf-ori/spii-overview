@@ -12,6 +12,9 @@
       - **2B**: "Mapping of Infrastructures & Projects" → "Inventory of infrastructures and
         projects"
       - **3B**: "Tool Box of Shared Tools" → "Toolbox of shared components"
+- [x] Rename 3A and 3B (done 2026-11-27):
+      - **3A**: "Capabilities & Interoperability" → "Practical Interoperability Guidelines"
+      - **3B**: "Toolbox of shared components" → "Interoperability Assessment Tool"
 
 ## Build (`index.html` via GitHub Pages)
 
